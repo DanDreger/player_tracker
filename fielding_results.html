@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fielding Results</title>
+		<!-- Bootstrap CSS for styling -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="container mt-4">
+			<h2>Fielding Results</h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Player Number</th>
+						<th>Player Name</th>
+						<th>Ground Ball Errors</th>
+						<th>Fly Ball Errors</th>
+						<th>Throwing Errors</th>
+						<th>Plays Made</th>
+					</tr>
+				</thead>
+				<tbody id="fielding-results"></tbody>
+			</table>
+		</div>
+
+		<!-- Firebase SDK -->
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+		<!-- Custom Script -->
+		<script src="fielding_results.js"></script>
+	</body>
+</html>
