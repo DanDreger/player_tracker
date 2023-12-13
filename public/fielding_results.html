@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Batting Practice App</title>
-		<!-- Bootstrap CSS -->
+		<title>Fielding Results</title>
+		<!-- Bootstrap CSS for styling -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 	</head>
 	<body>
@@ -34,19 +34,27 @@
 					</ul>
 				</div>
 			</nav>
-			<h2>Batting Practice</h2>
-			<div id="battersList"></div>
+			<h2>Fielding Results</h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Player Number</th>
+						<th>Player Name</th>
+						<th>Ground Ball Errors</th>
+						<th>Fly Ball Errors</th>
+						<th>Throwing Errors</th>
+						<th>Plays Made</th>
+					</tr>
+				</thead>
+				<tbody id="fielding-results"></tbody>
+			</table>
 		</div>
 
-		<!-- Bootstrap JS, Popper.js, and jQuery -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<!-- Firebase App is always required and must be first -->
-		<script src="firebase-init.js"></script>
+		<!-- Firebase SDK -->
 		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
-		<!-- Your custom script -->
-		<script src="batting_practice.js"></script>
+		<script src="firebase-init.js"></script>
+		<!-- Custom Script -->
+		<script src="fielding_results.js"></script>
 	</body>
 </html>

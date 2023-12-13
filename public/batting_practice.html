@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Fielding Chances</title>
-		<!-- Include Bootstrap for styling (optional) -->
+		<title>Batting Practice App</title>
+		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 	</head>
 	<body>
@@ -34,15 +34,20 @@
 					</ul>
 				</div>
 			</nav>
-			<h2>Fielding Chances</h2>
-			<div id="playersList"></div>
+			<h2>Batting Practice</h2>
+			<div id="battersList"></div>
 		</div>
 
-		<!-- Firebase SDK and other necessary scripts -->
-		<script src="firebase-init.js"></script>
+		<!-- Bootstrap JS, Popper.js, and jQuery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<!-- Firebase App is always required and must be first -->
+
 		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
-		<!-- Custom Script for Fielding Chances -->
-		<script src="fielding_practice.js"></script>
+		<script src="firebase-init.js"></script>
+		<!-- custom script -->
+		<script src="batting_practice.js"></script>
 	</body>
 </html>
