@@ -63,3 +63,168 @@ You're about to initialize a Firebase project in this directory:
 [info] 
 [info] ✔  Success! Logged into GitHub as DanDreger 
 [info] 
+[debug] [2023-12-13T22:06:12.354Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:06:12.770Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:06:12.771Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:06:20.531Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:06:20.779Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:06:20.779Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:06:23.630Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:06:23.731Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:06:23.732Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:06:36.577Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:06:36.999Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:06:37.000Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:06:40.651Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:06:40.754Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:06:40.754Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:06:40.806Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:06:40.895Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:06:40.896Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:06:40.958Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:06:41.062Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:06:41.062Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:06:41.098Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:06:41.201Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:06:41.201Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:06:48.447Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:06:48.694Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:06:48.694Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:06.691Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:07.130Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:07.131Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:07.464Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:07.602Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:07.838Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:07.839Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:08.616Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:08.617Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:10.937Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:11.036Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:11.036Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:12.429Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:12.524Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:12.525Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:12.540Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:12.632Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:12.633Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:18.589Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:18.832Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:18.832Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:20.349Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:20.439Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:20.440Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:20.488Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:20.580Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:20.580Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:20.637Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:20.736Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:20.736Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:20.768Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:20.861Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:20.861Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:23.078Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:23.165Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:23.165Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:08:37.746Z] >>> [apiv2][query] GET https://api.github.com/repos/ger/player_tracker       /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:08:37.987Z] <<< [apiv2][status] GET https://api.github.com/repos/ger/player_tracker       /actions/secrets/public-key 401
+[debug] [2023-12-13T22:08:37.987Z] <<< [apiv2][body] GET https://api.github.com/repos/ger/player_tracker       /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:09:02.579Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:09:02.973Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key 401
+[debug] [2023-12-13T22:09:02.973Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:09:04.248Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:09:04.359Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key 401
+[debug] [2023-12-13T22:09:04.359Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:09:04.762Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:09:04.861Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key 401
+[debug] [2023-12-13T22:09:04.861Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:09:04.923Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:09:05.015Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key 401
+[debug] [2023-12-13T22:09:05.015Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:09:05.086Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:09:05.187Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key 401
+[debug] [2023-12-13T22:09:05.187Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:09:05.235Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:09:05.335Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key 401
+[debug] [2023-12-13T22:09:05.335Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:12:30.046Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:12:30.432Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key 401
+[debug] [2023-12-13T22:12:30.433Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:12:34.518Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:12:34.616Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key 401
+[debug] [2023-12-13T22:12:34.616Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:12:34.687Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:12:34.783Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key 401
+[debug] [2023-12-13T22:12:34.784Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker       /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:12:39.130Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:12:39.237Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key 401
+[debug] [2023-12-13T22:12:39.237Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:12:39.895Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:12:39.986Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key 401
+[debug] [2023-12-13T22:12:39.986Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:12:43.803Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:12:43.896Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key 401
+[debug] [2023-12-13T22:12:43.896Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      /actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:42.750Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:43.171Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:43.171Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:46.210Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:46.307Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:46.307Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:46.451Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:46.544Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:46.544Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:46.625Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:46.726Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:46.726Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:46.817Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:46.913Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:46.913Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      q/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:49.911Z] >>> [apiv2][query] GET https://api.github.com/repos/DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:50.008Z] <<< [apiv2][status] GET https://api.github.com/repos/DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:50.009Z] <<< [apiv2][body] GET https://api.github.com/repos/DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:50.070Z] >>> [apiv2][query] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:50.162Z] <<< [apiv2][status] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:50.163Z] <<< [apiv2][body] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:50.210Z] >>> [apiv2][query] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:50.313Z] <<< [apiv2][status] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:50.313Z] <<< [apiv2][body] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:50.341Z] >>> [apiv2][query] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:50.434Z] <<< [apiv2][status] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:50.434Z] <<< [apiv2][body] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:50.488Z] >>> [apiv2][query] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:50.577Z] <<< [apiv2][status] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:50.578Z] <<< [apiv2][body] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzx/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:50.634Z] >>> [apiv2][query] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:50.736Z] <<< [apiv2][status] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:50.736Z] <<< [apiv2][body] GET https://api.github.com/repos/'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:50.775Z] >>> [apiv2][query] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:50.869Z] <<< [apiv2][status] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:50.869Z] <<< [apiv2][body] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:50.911Z] >>> [apiv2][query] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:51.008Z] <<< [apiv2][status] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:51.008Z] <<< [apiv2][body] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:51.051Z] >>> [apiv2][query] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:51.153Z] <<< [apiv2][status] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:51.153Z] <<< [apiv2][body] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:51.192Z] >>> [apiv2][query] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:51.290Z] <<< [apiv2][status] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:51.290Z] <<< [apiv2][body] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:51.336Z] >>> [apiv2][query] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:51.430Z] <<< [apiv2][status] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:51.430Z] <<< [apiv2][body] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:51.484Z] >>> [apiv2][query] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:51.575Z] <<< [apiv2][status] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:51.576Z] <<< [apiv2][body] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:51.610Z] >>> [apiv2][query] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:51.702Z] <<< [apiv2][status] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:51.702Z] <<< [apiv2][body] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:51.752Z] >>> [apiv2][query] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:51.850Z] <<< [apiv2][status] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:51.850Z] <<< [apiv2][body] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:51.902Z] >>> [apiv2][query] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:51.993Z] <<< [apiv2][status] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:51.993Z] <<< [apiv2][body] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-12-13T22:13:52.031Z] >>> [apiv2][query] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key type=owner
+[debug] [2023-12-13T22:13:52.131Z] <<< [apiv2][status] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key 401
+[debug] [2023-12-13T22:13:52.132Z] <<< [apiv2][body] GET https://api.github.com/repos/f'DanDreger/player_tracker      q;akfj;lisfj e;qowiruvjaefjw;ladekjfv epwkfv;LK ng;lkaresdzxf/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
