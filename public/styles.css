@@ -1,0 +1,109 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, 50px); /* 5 columns */
+	grid-template-rows: repeat(5, 55px); /* 5 rows */
+	gap: 0; /* No space between grid items */
+	border: 2px solid black; /* Border around the entire grid */
+	margin: auto; /* Center the grid */
+}
+
+.grid-label {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ccc;
+	position: relative;
+	cursor: pointer;
+	/* background-color: #fff; */
+	transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Style for grid radio */
+.grid-radio {
+	/* appearance: none; */
+	background: transparent; /* Make the background transparent */
+	border: none; /* Remove borders */
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Style when a radio button is checked */
+.grid-radio:checked + .grid-label {
+	background-color: #000; /* Darken the box */
+	border-color: red; /* Optional: change border color if needed */
+}
+
+/* Specific style for middle grid labels */
+.middle-label {
+	background-color: lightblue;
+}
+
+/* Optional: Change the middle label color when checked */
+.grid-radio:checked + .middle-label {
+	background-color: darkblue; /* Darken the middle box */
+	border-color: red;
+}
+
+#calledLocation,
+#pitchLocation {
+	width: 254px;
+	margin: calc(14% - 1px) auto;
+}
+
+.plate {
+	margin: 0 auto;
+	display: block;
+	width: 180px;
+	margin-top: -86px;
+}
+
+.pitches-section {
+	height: 14rem;
+	line-height: 10rem;
+	background-color: lightgray;
+	margin: 30px;
+	padding: 30px;
+	border: 2px solid black;
+}
+
+.strike {
+	background-color: lightblue;
+}
+
+#targetButtons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#targetButtons .column {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	padding: 5px;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	width: 75px;
+	margin: 5px auto;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+	margin: 5px auto;
+	height: 60px;
+}

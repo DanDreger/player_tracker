@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css" />
+		<!--  Firebase imports  -->
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+		<script src="firebase-init.js"></script>
+		<!-- Bootstrap CSS -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- Dropdown for Players -->
+		<select id="playersDropdown" class="form-control"></select>
+
+		<div class="container">
+			<form id="pitchForm">
+				<!-- Called Location Grid -->
+				<div class="row">
+					<div class="col"></div>
+
+					<div id="calledLocation" class="grid">
+						<!-- Grid Row 1 -->
+						<label for="radio-0-0" class="grid-label up-left-ball ball">
+							<input type="radio" name="gridSelection" value="up-left-ball" id="radio-0-0" class="grid-radio" />
+						</label>
+						<label for="radio-0-1" class="grid-label up-left-ball ball">
+							<input type="radio" name="gridSelection" value="up-left-ball" id="radio-0-1" class="grid-radio" />
+						</label>
+						<label for="radio-0-2" class="grid-label up-ball ball">
+							<input type="radio" name="gridSelection" value="up-ball" id="radio-0-2" class="grid-radio" />
+						</label>
+						<label for="radio-0-3" class="grid-label up-right-ball ball">
+							<input type="radio" name="gridSelection" value="up-right-ball" id="radio-0-3" class="grid-radio" />
+						</label>
+						<label for="radio-0-4" class="grid-label up-right-ball ball">
+							<input type="radio" name="gridSelection" value="up-right-ball" id="radio-0-4" class="grid-radio" />
+						</label>
+						<!-- Grid Row 2 -->
+						<label for="radio-1-0" class="grid-label up-left-ball ball">
+							<input type="radio" name="gridSelection" value="up-left-ball" id="radio-1-0" class="grid-radio" />
+						</label>
+						<label for="radio-1-1" class="grid-label up-left-strike strike">
+							<input type="radio" name="gridSelection" value="up-left-strike" id="radio-1-1" class="grid-radio" />
+						</label>
+						<label for="radio-1-2" class="grid-label up-strike strike">
+							<input type="radio" name="gridSelection" value="up-strike" id="radio-1-2" class="grid-radio" />
+						</label>
+						<label for="radio-1-3" class="grid-label up-right-strike strike">
+							<input type="radio" name="gridSelection" value="up-right-strike" id="radio-1-3" class="grid-radio" />
+						</label>
+						<label for="radio-1-4" class="grid-label up-right-ball ball">
+							<input type="radio" name="gridSelection" value="up-right-ball" id="radio-1-4" class="grid-radio" />
+						</label>
+						<!-- Grid Row 3 -->
+						<label for="radio-2-0" class="grid-label middle-left-ball ball">
+							<input type="radio" name="gridSelection" value="middle-left-ball" id="radio-2-0" class="grid-radio" />
+						</label>
+						<label for="radio-2-1" class="grid-label middle-left-strike strike">
+							<input type="radio" name="gridSelection" value="middle-left-strike" id="radio-2-1" class="grid-radio" />
+						</label>
+						<label for="radio-2-2" class="grid-label middle-middle strike">
+							<input type="radio" name="gridSelection" value="middle-middle" id="radio-2-2" class="grid-radio" />
+						</label>
+						<label for="radio-2-3" class="grid-label middle-right-strike strike">
+							<input type="radio" name="gridSelection" value="middle-right-strike" id="radio-2-3" class="grid-radio" />
+						</label>
+						<label for="radio-2-4" class="grid-label middle-right-ball ball">
+							<input type="radio" name="gridSelection" value="middle-right-ball" id="radio-2-4" class="grid-radio" />
+						</label>
+						<!-- Grid Row 4 -->
+						<label for="radio-3-0" class="grid-label down-left-ball ball">
+							<input type="radio" name="gridSelection" value="down-left-ball" id="radio-3-0" class="grid-radio" />
+						</label>
+						<label for="radio-3-1" class="grid-label down-left-strike strike">
+							<input type="radio" name="gridSelection" value="down-left-strike" id="radio-3-1" class="grid-radio" />
+						</label>
+						<label for="radio-3-2" class="grid-label down-strike strike">
+							<input type="radio" name="gridSelection" value="down-strike" id="radio-3-2" class="grid-radio" />
+						</label>
+						<label for="radio-3-3" class="grid-label down-right-strike strike">
+							<input type="radio" name="gridSelection" value="down-right-strike" id="radio-3-3" class="grid-radio" />
+						</label>
+						<label for="radio-3-4" class="grid-label down-right-ball ball">
+							<input type="radio" name="gridSelection" value="down-right-ball" id="radio-3-4" class="grid-radio" />
+						</label>
+						<!-- Grid Row 5 -->
+						<label for="radio-4-0" class="grid-label down-left-ball ball">
+							<input type="radio" name="gridSelection" value="down-left-ball" id="radio-4-0" class="grid-radio" />
+						</label>
+						<label for="radio-4-1" class="grid-label down-left-ball ball">
+							<input type="radio" name="gridSelection" value="down-left-ball" id="radio-4-1" class="grid-radio" />
+						</label>
+						<label for="radio-4-2" class="grid-label down-ball ball">
+							<input type="radio" name="gridSelection" value="down-ball" id="radio-4-2" class="grid-radio" />
+						</label>
+						<label for="radio-4-3" class="grid-label down-right-ball ball">
+							<input type="radio" name="gridSelection" value="down-right-ball" id="radio-4-3" class="grid-radio" />
+						</label>
+						<label for="radio-4-4" class="grid-label down-right-ball ball">
+							<input type="radio" name="gridSelection" value="down-right-ball" id="radio-4-4" class="grid-radio" />
+						</label>
+					</div>
+					<div class="col">
+						<img src="./images/Hitter_Image.png" class="hitter" />
+					</div>
+				</div>
+
+				<div class="row">
+					<img class="plate" src="./images/HomePlate.png" />
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-auto">
+						<div class="pitches-section">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="pitchType" id="4SeamFastball" value="4-Seam Fastball" />
+								<label class="form-check-label" for="4SeamFastball">4-Seam Fastball</label>
+							</div>
+							<!-- Repeat for each radio button -->
+
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="pitchType" id="2SeamFastball" value="2-Seam Fastball" />
+								<label class="form-check-label" for="2SeamFastball">2-Seam Fastball</label>
+							</div>
+
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="pitchType" id="Cutter" value="Cutter" />
+								<label class="form-check-label" for="Cutter">Cutter</label>
+							</div>
+
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="pitchType" id="Slider" value="Slider" />
+								<label class="form-check-label" for="Slider">Slider</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="pitchType" id="Curveball" value="Curveball" />
+								<label class="form-check-label" for="Curveball">Curveball</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="pitchType" id="Changeup" value="Changeup" />
+								<label class="form-check-label" for="Changeup">Changeup</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="pitchType" id="Knuckleball" value="Knuckleball" />
+								<label class="form-check-label" for="Knuckleball">Knuckleball</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Pitch Location Grid -->
+				<div id="targetButtons">
+					<div class="column left">
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss High Left">Miss</button>
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss High Left">Miss</button>
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss Left">Miss</button>
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss Low Left">Miss</button>
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss Low Left">Miss</button>
+					</div>
+					<div class="column middle left">
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss High Left">Miss</button>
+						<button type="submit" class="target-button btn btn-primary" onclick="handleButtonClick(this)" data-value="Near Miss High Left">Near Miss</button>
+						<button type="submit" class="target-button btn btn-primary" onclick="handleButtonClick(this)" data-value="Near Miss Left">Near Miss</button>
+						<button type="submit" class="target-button btn btn-primary" onclick="handleButtonClick(this)" data-value="Near Miss Low Left">Near Miss</button>
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss Low Left">Miss</button>
+					</div>
+
+					<div class="column middle">
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss High">Miss</button>
+						<button type="submit" class="target-button btn btn-primary" onclick="handleButtonClick(this)" data-value="Near Miss High">Near Miss</button>
+						<button type="submit" class="target-button btn btn-success" onclick="handleButtonClick(this)" data-value="Hit">Hit</button>
+						<button type="submit" class="target-button btn btn-primary" onclick="handleButtonClick(this)" data-value="Near Miss Low">Near Miss</button>
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss Low">Miss</button>
+					</div>
+					<div class="column right">
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss High Right">Miss</button>
+						<button type="submit" class="target-button btn btn-primary" onclick="handleButtonClick(this)" data-value="Near Miss High Right">Near Miss</button>
+						<button type="submit" class="target-button btn btn-primary" onclick="handleButtonClick(this)" data-value="Near Miss Right">Near Miss</button>
+						<button type="submit" class="target-button btn btn-primary" onclick="handleButtonClick(this)" data-value="Near Miss Low Right">Near Miss</button>
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss Low Right">Miss</button>
+					</div>
+					<div class="column right">
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss High Right">Miss</button>
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss High Right">Miss</button>
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss Right">Miss</button>
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss Low Right">Miss</button>
+						<button type="submit" class="target-button btn btn-danger" onclick="handleButtonClick(this)" data-value="Miss Low Right">Miss</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<!-- JavaScript Files -->
+		<script src="bullpen.js"></script>
+	</body>
+</html>
