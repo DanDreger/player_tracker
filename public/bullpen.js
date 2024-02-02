@@ -25,25 +25,26 @@ populatePlayersDropdown();
 function handleButtonClick(button) {
     event.preventDefault();
 
-    // Retrieve the selected pitch type
-    const selectedPitchType = document.querySelector('input[name="pitchType"]:checked');
-    const pitchTypeValue = selectedPitchType ? selectedPitchType.value : null;
-
     const pitchResult = button.getAttribute('data-value');
     const selectedRadio = document.querySelector('input[name="gridSelection"]:checked');
     const radioValue = selectedRadio ? selectedRadio.value : null;
 
+    // Retrieve the selected windup
+    const selectedWindup = document.querySelector('input[name="windup"]:checked');
+    const windupValue = selectedWindup ? selectedWindup.value : null;
+
     const formData = {
-        playerId: document.getElementById('playersDropdown').value, // Player ID
+        playerId: document.getElementById('playersDropdown').value,
         calledLocation: radioValue,
         result: pitchResult,
-        pitchType: pitchTypeValue, // Include the pitch type
-        date: new Date().toISOString().split('T')[0] // Current date
+        pitchType: document.querySelector('input[name="pitchType"]:checked')?.value,
+        windup: windupValue, // Include the windup value
+        date: new Date().toISOString().split('T')[0]
     };
-    console.log(formData);
 
     sendToFirestore(formData);
 }
+
 
 // Handle the non-submit buttons
 document.querySelectorAll('#targetButtons button[type="button"]').forEach(button => {
@@ -56,22 +57,14 @@ document.querySelectorAll('#targetButtons button[type="button"]').forEach(button
 function sendToFirestore(data) {
     const db = firebase.firestore();
     const playerRef = db.collection('players').doc(data.playerId);
-    const dateRef = playerRef.collection('bullpens').doc(data.date);
-    const pitchesRef = dateRef.collection('pitches');
+    const pitchesRef = playerRef.collection('pitches');
 
-    pitchesRef.get().then(snapshot => {
-        const pitchNumber = snapshot.size + 1;
-        if (!pitchNumber) {
-            console.error("Pitch number is undefined");
-            return;
-        }
-
-        pitchesRef.doc(pitchNumber.toString()).set({
-            calledLocation: data.calledLocation,
-            result: data.result,
-            pitchType: data.pitchType, // Save the pitch type
-            timestamp: firebase.firestore.FieldValue.serverTimestamp()
-        });
+    pitchesRef.add({
+        calledLocation: data.calledLocation,
+        result: data.result,
+        pitchType: data.pitchType,
+        windup: data.windup,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
     }).catch(error => {
         console.error("Error adding pitch: ", error);
     });

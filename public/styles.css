@@ -1,10 +1,9 @@
 .grid {
 	display: grid;
-	grid-template-columns: repeat(5, 50px); /* 5 columns */
-	grid-template-rows: repeat(5, 55px); /* 5 rows */
+	grid-template-columns: repeat(5, 100px); /* 5 columns */
+	grid-template-rows: repeat(5, 110px); /* 5 rows */
 	gap: 0; /* No space between grid items */
-	border: 2px solid black; /* Border around the entire grid */
-	margin: auto; /* Center the grid */
+	/* margin: auto; */
 }
 
 .grid-label {
@@ -51,8 +50,8 @@
 
 #calledLocation,
 #pitchLocation {
-	width: 254px;
-	margin: calc(14% - 1px) auto;
+	/* width: 254px; */
+	/* margin: calc(14% - 1px) auto; */
 }
 
 .plate {
@@ -62,8 +61,9 @@
 	margin-top: -86px;
 }
 
-.pitches-section {
-	height: 14rem;
+.pitches-section,
+.windup-selection {
+	height: auto;
 	line-height: 10rem;
 	background-color: lightgray;
 	margin: 30px;
@@ -100,10 +100,51 @@ button {
 	margin: 5px auto;
 }
 
+button.pitch-execution {
+	height: 100px;
+	width: 130px;
+}
+
+.location-grid {
+	height: 100%;
+	margin-top: 250px;
+}
+
 [type="button"],
 [type="reset"],
 [type="submit"],
 button {
 	margin: 5px auto;
 	height: 60px;
+	opacity: 0.25;
+}
+
+.table td,
+.table th {
+	padding: 0.6rem !important;
+}
+
+.big-label {
+	font-size: 2rem; /* Adjust the size as needed */
+}
+
+.form-check-inline {
+	border: 2px solid black;
+}
+
+.form-check-inline .form-check-input {
+	transform: scale(5); /* Adjust the scale as needed */
+	margin-right: 50px; /* Adjust spacing as needed */
+	margin-left: 50px;
+}
+
+.hitter {
+	height: 1000px;
+}
+
+.target-buttons {
+	background-image: url("./images/mitt.jpg");
+	background-size: cover; /* or contain, depending on how you want it displayed */
+	background-position: center;
+	height: 700px;
 }

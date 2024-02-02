@@ -3,14 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Batting Practice App</title>
-		<!-- Bootstrap CSS -->
+		<title>Bullpen Results</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+		<!-- Native CSS -->
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<div class="container mt-4">
+		<div class="container-fluid">
+			<h1>Bullpen Results</h1>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="#">My App</a>
+				<a class="navbar-brand" href="#">Bullpen Results</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -35,25 +38,43 @@
 							<a class="nav-link" href="bullpen.html">Bullpen Tracking</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="bullpen_results.js">Bullpen Results</a>
+							<a class="nav-link" href="bullpen_results.html">Bullpen Results</a>
 						</li>
 					</ul>
 				</div>
 			</nav>
-			<h2>Batting Practice</h2>
-			<div id="battersList"></div>
+			<div class="table-responsive">
+				<table id="bullpen-results" class="table">
+					<thead>
+						<tr>
+							<th class="d-none d-md-table-cell">#</th>
+							<th class="d-none d-md-table-cell">First Name</th>
+							<th>Last Name</th>
+							<th>P #</th>
+							<th>Hit %</th>
+							<th>Near Miss %</th>
+							<th>Miss %</th>
+							<th>Most Common Miss</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Dynamic content will be inserted here by your JavaScript -->
+					</tbody>
+				</table>
+			</div>
 		</div>
 
-		<!-- Bootstrap JS, Popper.js, and jQuery -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<!-- Firebase App is always required and must be first -->
+		<!-- Firebase SDK -->
 
 		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 		<script src="firebase-init.js"></script>
-		<!-- custom script -->
-		<script src="batting_practice.js"></script>
+
+		<!-- Your JavaScript for fetching and displaying data -->
+
+		<script src="./bullpen_results.js"></script>
+
+		<!-- Bootstrap -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

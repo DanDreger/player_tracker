@@ -10,11 +10,12 @@ function renderFieldingResults() {
             const player = playerDoc.data();
             const playerId = playerDoc.id;
             let playerFielding = { groundBallError: 0, flyBallError: 0, throwingError: 0, playMade: 0 };
-
+            console.log('player', player)
             db.collection("players").doc(playerId).collection("Fielding Chances")
                 .get().then((fieldingSnapshot) => {
                     fieldingSnapshot.forEach((chanceDoc) => {
                         const chanceData = chanceDoc.data();
+                        console.log('chancedata', chanceData)
 
                         // Aggregate fielding data
                         playerFielding.groundBallError += chanceData.groundBallError || 0;
