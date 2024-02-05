@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!--  Firebase imports  -->
-		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
-		<script src="firebase-init.js"></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bullpen Tracking</title>
 		<!-- Bootstrap CSS -->
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
 		<!-- Native CSS -->
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="container mt-4">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<a class="navbar-brand" href="#">Bullpen Tracking</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +65,7 @@
 						</div>
 					</div>
 				</div>
-
+				<h2>Called Location</h2>
 				<div class="row">
 					<div class="col-1"></div>
 					<div class="col-7">
@@ -199,8 +198,7 @@
 					</div>
 				</div>
 				<!-- Pitch Location Grid -->
-				<div id="targetButtons"></div>
-
+				<h2>Pitch Execution</h2>
 				<div id="targetButtons" class="target-buttons">
 					<div class="column left">
 						<button type="submit" class="target-button btn btn-danger pitch-execution" onclick="handleButtonClick(this)" data-value="Miss High Left">Miss</button>
@@ -241,7 +239,10 @@
 				</div>
 			</form>
 		</div>
-
+		<!--  Firebase imports  -->
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+		<script src="firebase-init.js"></script>
 		<!-- JavaScript Files -->
 		<script src="bullpen.js"></script>
 		<!-- Bootstrap -->

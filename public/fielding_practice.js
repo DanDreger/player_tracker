@@ -10,12 +10,12 @@ function renderPlayers() {
 
             playersHtml += `
                 <div class="row mb-2">
-                    <div class="col-md-2">${player.number}</div>
-                    <div class="col-md-4">${player.firstName} ${player.lastName}</div>
-                    <div class="col-md-6">
-                        <button class="btn btn-warning fielding-btn" data-player-id="${playerId}" data-fielding-type="groundBallError">Ground Ball Error</button>
-                        <button class="btn btn-danger fielding-btn" data-player-id="${playerId}" data-fielding-type="flyBallError">Fly Ball Error</button>
-                        <button class="btn btn-secondary fielding-btn" data-player-id="${playerId}" data-fielding-type="throwingError">Throwing Error</button>
+                    <div class="col-4">${player.number}</div>
+                    <div class="col-6">${player.firstName} ${player.lastName}</div>
+                    <div class="col-12">
+                        <button class="btn btn-warning fielding-btn" data-player-id="${playerId}" data-fielding-type="groundBallError">GB Error</button>
+                        <button class="btn btn-danger fielding-btn" data-player-id="${playerId}" data-fielding-type="flyBallError">FB Error</button>
+                        <button class="btn btn-secondary fielding-btn" data-player-id="${playerId}" data-fielding-type="throwingError">Throw Error</button>
                         <button class="btn btn-success fielding-btn" data-player-id="${playerId}" data-fielding-type="playMade">Play Made</button>
                     </div>
                 </div>`;

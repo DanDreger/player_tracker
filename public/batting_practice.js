@@ -11,9 +11,9 @@ function renderBattingPracticePlayers() {
 
             playersHtml += `
                 <div class="row mb-2">
-                    <div class="col-md-2">${player.number}</div>
-                    <div class="col-md-4">${player.firstName} ${player.lastName}</div>
-                    <div class="col-md-6">
+                    <div class="col-2">${player.number}</div>
+                    <div class="col-4">${player.firstName} ${player.lastName}</div>
+                    <div class="col-12">
                         <button class="btn btn-danger swing-btn" data-player-id="${playerId}" data-swing-type="whiff">Whiff</button>
                         <button class="btn btn-secondary swing-btn" data-player-id="${playerId}" data-swing-type="contact">Contact</button>
                         <button class="btn btn-primary swing-btn" data-player-id="${playerId}" data-swing-type="productiveBall">Productive Ball</button>

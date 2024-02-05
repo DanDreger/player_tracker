@@ -1,7 +1,11 @@
+h2 {
+	margin-top: 50px;
+}
+
 .grid {
 	display: grid;
-	grid-template-columns: repeat(5, 100px); /* 5 columns */
-	grid-template-rows: repeat(5, 110px); /* 5 rows */
+	grid-template-columns: repeat(5, 60%); /* 5 columns */
+	grid-template-rows: repeat(5, 100%); /* 5 rows */
 	gap: 0; /* No space between grid items */
 	/* margin: auto; */
 }
@@ -48,12 +52,6 @@
 	border-color: red;
 }
 
-#calledLocation,
-#pitchLocation {
-	/* width: 254px; */
-	/* margin: calc(14% - 1px) auto; */
-}
-
 .plate {
 	margin: 0 auto;
 	display: block;
@@ -65,10 +63,7 @@
 .windup-selection {
 	height: auto;
 	line-height: 10rem;
-	background-color: lightgray;
-	margin: 30px;
-	padding: 30px;
-	border: 2px solid black;
+	background-color: lightblue;
 }
 
 .strike {
@@ -101,13 +96,13 @@ button {
 }
 
 button.pitch-execution {
-	height: 100px;
-	width: 130px;
+	/* height: 100px;
+	width: 100%; */
 }
 
 .location-grid {
 	height: 100%;
-	margin-top: 250px;
+	margin-top: 100%;
 }
 
 [type="button"],
@@ -125,7 +120,7 @@ button {
 }
 
 .big-label {
-	font-size: 2rem; /* Adjust the size as needed */
+	font-size: 1.5rem; /* Adjust the size as needed */
 }
 
 .form-check-inline {
@@ -133,18 +128,28 @@ button {
 }
 
 .form-check-inline .form-check-input {
-	transform: scale(5); /* Adjust the scale as needed */
-	margin-right: 50px; /* Adjust spacing as needed */
-	margin-left: 50px;
+	transform: scale(2); /* Adjust the scale as needed */
+	margin-right: 20px; /* Adjust spacing as needed */
+	margin-left: 20px;
 }
 
 .hitter {
-	height: 1000px;
+	height: 100%;
 }
 
 .target-buttons {
 	background-image: url("./images/mitt.jpg");
-	background-size: cover; /* or contain, depending on how you want it displayed */
+	background-size: auto;
 	background-position: center;
-	height: 700px;
+}
+
+.swing-btn,
+.fielding-btn {
+	padding: 5px;
+	opacity: 1;
+	width: auto;
+}
+
+.playersList .col-12 {
+	padding: 0;
 }
