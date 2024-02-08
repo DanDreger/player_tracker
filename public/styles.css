@@ -153,3 +153,12 @@ button {
 .playersList .col-12 {
 	padding: 0;
 }
+
+/* .selected {
+	opacity: 1;
+} */
+
+.target-button {
+	opacity: 0.25; /* Default opacity for buttons */
+	transition: opacity 2s ease; /* Smooth transition for opacity changes */
+}

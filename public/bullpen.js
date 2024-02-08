@@ -1,5 +1,7 @@
 
 var db = firebase.firestore();
+var lastClickedButton = null;
+
 
 function populatePlayersDropdown() {
     const dropdown = document.getElementById('playersDropdown');
@@ -43,16 +45,42 @@ function handleButtonClick(button) {
     };
 
     sendToFirestore(formData);
+
+    // Immediately set the clicked button's opacity to 1
+    button.style.opacity = '1';
+
+    // Use setTimeout to change the opacity back to .25 after a short period
+    setTimeout(() => {
+        button.style.opacity = '.25';
+    }, 2000); // 2000 milliseconds = 2 seconds for the fade effect
+
+    if (lastClickedButton && lastClickedButton !== button) {
+        lastClickedButton.classList.remove('selected');
+        lastClickedButton.style.opacity = '.25'; // Ensure consistency in opacity for non-active buttons
+    }
+
+    lastClickedButton = button;
 }
 
 
+
+
 // Handle the non-submit buttons
-document.querySelectorAll('#targetButtons button[type="button"]').forEach(button => {
-    button.addEventListener('click', function () {
-        // Manually submit the form
-        document.getElementById('pitchForm').submit();
-    });
-});
+// document.querySelectorAll('#targetButtons button[type="button"]').forEach(button => {
+//     button.addEventListener('click', function () {
+//         console.log('inside listener')
+//         this.classList.add('selected');
+
+//         // If there was a last clicked button and it's not the current button, remove the 'selected' class
+//         if (lastClickedButton && lastClickedButton !== this) {
+//             lastClickedButton.classList.remove('selected');
+//             console.log('inside class switcher')
+//         }
+
+//         // Manually submit the form
+//         document.getElementById('pitchForm').submit();
+//     });
+// });
 
 function sendToFirestore(data) {
     const db = firebase.firestore();
