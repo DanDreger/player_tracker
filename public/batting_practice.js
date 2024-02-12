@@ -39,7 +39,7 @@ function recordSwing(playerId, swingType) {
                 transaction.set(swingDocRef, {
                     [swingType]: 1,
                     totalSwings: 1,
-                    date: now // Add the Firestore Timestamp here
+                    date: now
                 });
             } else {
                 let newCount = (swingDoc.data()[swingType] || 0) + 1;

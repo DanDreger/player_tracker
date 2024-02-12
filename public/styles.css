@@ -116,7 +116,7 @@ button {
 
 .table td,
 .table th {
-	padding: 0.6rem !important;
+	padding: 0.25rem !important;
 }
 
 .big-label {
@@ -153,10 +153,6 @@ button {
 .playersList .col-12 {
 	padding: 0;
 }
-
-/* .selected {
-	opacity: 1;
-} */
 
 .target-button {
 	opacity: 0.25; /* Default opacity for buttons */
