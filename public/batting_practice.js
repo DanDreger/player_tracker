@@ -10,16 +10,18 @@ function renderBattingPracticePlayers() {
             const playerId = doc.id; // Assuming doc.id contains the player's ID
 
             playersHtml += `
-                <div class="row mb-2">
-                    <div class="col-2">${player.number}</div>
-                    <div class="col-4">${player.firstName} ${player.lastName}</div>
-                    <div class="col-12">
-                        <button class="btn btn-danger swing-btn" data-player-id="${playerId}" data-swing-type="whiff">Whiff</button>
-                        <button class="btn btn-secondary swing-btn" data-player-id="${playerId}" data-swing-type="contact">Contact</button>
-                        <button class="btn btn-primary swing-btn" data-player-id="${playerId}" data-swing-type="productiveBall">Productive Ball</button>
-                        <button class="btn btn-success swing-btn" data-player-id="${playerId}" data-swing-type="barrel">Barrel</button>
-                    </div>
-                </div>`;
+            <div class="row mb-2">
+            <div class="col-1">${player.number}</div>
+            <div class="col-8">${player.firstName} ${player.lastName}</div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-3 swing-btn-container"><button class="btn btn-danger swing-btn" data-player-id="${playerId}" data-swing-type="whiff">Whiff</button></div>
+                <div class="col-3 swing-btn-container"><button class="btn btn-secondary swing-btn" data-player-id="${playerId}" data-swing-type="contact">Contact</button></div>
+                <div class="col-3 swing-btn-container"><button class="btn btn-primary swing-btn" data-player-id="${playerId}" data-swing-type="productiveBall">Productive Ball</button></div>
+                <div class="col-3 swing-btn-container"><button class="btn btn-success swing-btn" data-player-id="${playerId}" data-swing-type="barrel">Barrel</button></div>
+              </div>
+            </div>
+          </div>`;
         });
         playersHtml += '</div>';
         document.getElementById('battersList').innerHTML = playersHtml;

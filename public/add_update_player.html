@@ -6,14 +6,16 @@
 		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 		<script src="firebase-init.js"></script>
 
-		<!-- Bootstrap CSS -->
+		<!-- Include Bootstrap for styling (optional) -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+		<!-- Native CSS -->
+		<!-- <link rel="stylesheet" href="styles.css" /> -->
 	</head>
 	<body>
-		<div class="container mt-4 mb-4">
+		<div class="container mt-4">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<a class="navbar-brand" href="#">Add/Update Player</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler m-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
@@ -43,7 +45,7 @@
 				</div>
 			</nav>
 			<!-- Below your 'Add Player' button -->
-			<div class="container mt-4 mb-4" id="playersList"></div>
+			<div class="mt-4 mb-4" id="playersList"></div>
 
 			<!-- Modal -->
 			<div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="playerModalLabel" aria-hidden="true">
@@ -149,12 +151,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="container mt-4 mb-4">
-			<div class="container mt-4">
-				<h3 class="mt-4">Add a New Player</h3>
-				<button class="btn btn-success" onclick="openPlayerModal()">Add New Player</button>
+			<div class="mt-4 mb-4">
+				<div class="mt-4">
+					<h3 class="mt-4">Add a New Player</h3>
+					<button class="btn btn-success" onclick="openPlayerModal()">Add New Player</button>
+				</div>
 			</div>
 		</div>
 

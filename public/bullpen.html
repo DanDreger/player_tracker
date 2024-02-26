@@ -13,7 +13,7 @@
 		<div class="container mt-4">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<a class="navbar-brand" href="#">Bullpen Tracking</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler m-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
@@ -46,8 +46,8 @@
 			<select id="playersDropdown" class="form-control"></select>
 
 			<form id="pitchForm">
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-auto">
+				<div class="row">
+					<div class="col-md-6">
 						<div class="windup-selection">
 							<h2>Motion Selection</h2>
 							<div class="form-check form-check-inline col-12">
@@ -64,13 +64,49 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-md-6">
+						<div class="pitches-section">
+							<h2 class="text-center">Pitch Selection</h2>
+							<div class="form-check form-check-inline col-12">
+								<input class="form-check-input" type="radio" name="pitchType" id="4SeamFastball" value="4-Seam Fastball" />
+								<label class="form-check-label big-label" for="4SeamFastball">4-Seam Fastball</label>
+							</div>
+							<div class="form-check form-check-inline col-12">
+								<input class="form-check-input" type="radio" name="pitchType" id="2SeamFastball" value="2-Seam Fastball" />
+								<label class="form-check-label big-label" for="2SeamFastball">2-Seam Fastball</label>
+							</div>
+
+							<div class="form-check form-check-inline col-12">
+								<input class="form-check-input" type="radio" name="pitchType" id="Cutter" value="Cutter" />
+								<label class="form-check-label big-label" for="Cutter">Cutter</label>
+							</div>
+
+							<div class="form-check form-check-inline col-12">
+								<input class="form-check-input" type="radio" name="pitchType" id="Slider" value="Slider" />
+								<label class="form-check-label big-label" for="Slider">Slider</label>
+							</div>
+							<div class="form-check form-check-inline col-12">
+								<input class="form-check-input" type="radio" name="pitchType" id="Curveball" value="Curveball" />
+								<label class="form-check-label big-label" for="Curveball">Curveball</label>
+							</div>
+							<div class="form-check form-check-inline col-12">
+								<input class="form-check-input" type="radio" name="pitchType" id="Changeup" value="Changeup" />
+								<label class="form-check-label big-label" for="Changeup">Changeup</label>
+							</div>
+							<div class="form-check form-check-inline col-12">
+								<input class="form-check-input" type="radio" name="pitchType" id="Knuckleball" value="Knuckleball" />
+								<label class="form-check-label big-label" for="Knuckleball">Knuckleball</label>
+							</div>
+						</div>
+					</div>
 				</div>
+
 				<h2>Called Location</h2>
 				<div class="row">
 					<div class="col-1"></div>
 					<div class="col-7">
 						<div class="location-grid">
-							<div id="calledLocation" class="grid col-6 text-center">
+							<div id="calledLocation" class="grid col-7 text-center">
 								<!-- Grid Row 1 -->
 								<label for="radio-0-0" class="grid-label up-left-ball ball">
 									<input type="radio" name="gridSelection" value="up-left-ball" id="radio-0-0" class="grid-radio" />
@@ -153,50 +189,14 @@
 								</label>
 							</div>
 						</div>
-						<div><img class="plate" src="./images/HomePlate.png" /></div>
 					</div>
 					<div class="col-4">
 						<img src="./images/Hitter_Image.png" class="hitter" />
 					</div>
 				</div>
 
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-auto">
-						<div class="pitches-section">
-							<h2 class="text-center">Pitch Selection</h2>
-							<div class="form-check form-check-inline col-12">
-								<input class="form-check-input" type="radio" name="pitchType" id="4SeamFastball" value="4-Seam Fastball" />
-								<label class="form-check-label big-label" for="4SeamFastball">4-Seam Fastball</label>
-							</div>
-							<div class="form-check form-check-inline col-12">
-								<input class="form-check-input" type="radio" name="pitchType" id="2SeamFastball" value="2-Seam Fastball" />
-								<label class="form-check-label big-label" for="2SeamFastball">2-Seam Fastball</label>
-							</div>
+				<div class="row justify-content-center"></div>
 
-							<div class="form-check form-check-inline col-12">
-								<input class="form-check-input" type="radio" name="pitchType" id="Cutter" value="Cutter" />
-								<label class="form-check-label big-label" for="Cutter">Cutter</label>
-							</div>
-
-							<div class="form-check form-check-inline col-12">
-								<input class="form-check-input" type="radio" name="pitchType" id="Slider" value="Slider" />
-								<label class="form-check-label big-label" for="Slider">Slider</label>
-							</div>
-							<div class="form-check form-check-inline col-12">
-								<input class="form-check-input" type="radio" name="pitchType" id="Curveball" value="Curveball" />
-								<label class="form-check-label big-label" for="Curveball">Curveball</label>
-							</div>
-							<div class="form-check form-check-inline col-12">
-								<input class="form-check-input" type="radio" name="pitchType" id="Changeup" value="Changeup" />
-								<label class="form-check-label big-label" for="Changeup">Changeup</label>
-							</div>
-							<div class="form-check form-check-inline col-12">
-								<input class="form-check-input" type="radio" name="pitchType" id="Knuckleball" value="Knuckleball" />
-								<label class="form-check-label big-label" for="Knuckleball">Knuckleball</label>
-							</div>
-						</div>
-					</div>
-				</div>
 				<!-- Pitch Location Grid -->
 				<h2>Pitch Execution</h2>
 				<div id="targetButtons" class="target-buttons">

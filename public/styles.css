@@ -4,7 +4,7 @@ h2 {
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(5, 60%); /* 5 columns */
+	grid-template-columns: repeat(5, 50%); /* 5 columns */
 	grid-template-rows: repeat(5, 100%); /* 5 rows */
 	gap: 0; /* No space between grid items */
 	/* margin: auto; */
@@ -147,7 +147,11 @@ button {
 .fielding-btn {
 	padding: 5px;
 	opacity: 1;
-	width: auto;
+	width: 100%;
+}
+
+.swing-btn-container {
+	padding: 2px;
 }
 
 .playersList .col-12 {
@@ -157,4 +161,32 @@ button {
 .target-button {
 	opacity: 0.25; /* Default opacity for buttons */
 	transition: opacity 2s ease; /* Smooth transition for opacity changes */
+}
+
+@media (min-width: 820px) {
+	.location-grid {
+		margin: 0 auto;
+		padding-top: 135px;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(5, 37%);
+		grid-template-rows: repeat(5, 125%);
+		gap: 0;
+	}
+}
+
+@media (min-width: 820px) {
+	.location-grid {
+		margin: 0 auto;
+		padding-top: 135px;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(5, 37%);
+		grid-template-rows: repeat(5, 125%);
+		gap: 0;
+	}
 }

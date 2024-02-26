@@ -3,33 +3,50 @@ var db = firebase.firestore();
 
 function fetchAndDisplayAllPitches() {
     const db = firebase.firestore();
-    const allPitchesData = [];
+    const twoWeeksAgo = new Date();
+    twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
 
-    db.collection("players").get().then(playersSnapshot => {
-        playersSnapshot.forEach(playerDoc => {
-            const playerId = playerDoc.id;
-            const playerData = playerDoc.data(); // Get player details
+    db.collection("players").get().then((querySnapshot) => {
+        const promises = [];
 
-            db.collection("players").doc(playerId).collection("pitches").get()
-                .then(pitchesSnapshot => {
-                    pitchesSnapshot.forEach(pitchDoc => {
+        querySnapshot.forEach((playerDoc) => {
+            const player = playerDoc.data();
+
+            const promise = db.collection("players").doc(playerDoc.id).collection("pitches")
+                .get().then((pitchesSnapshot) => {
+                    const filteredPitches = [];
+
+                    pitchesSnapshot.forEach((pitchDoc) => {
                         const pitchData = pitchDoc.data();
-                        console.log('playerdata', playerData)
-                        pitchData.playerId = playerId;
-                        pitchData.firstName = playerData.firstName;
-                        pitchData.lastName = playerData.lastName;
-                        pitchData.number = playerData.number;
-                        allPitchesData.push(pitchData);
+                        const pitchDate = pitchData.timestamp.toDate();
+
+                        if (pitchDate >= twoWeeksAgo) {
+                            pitchData.playerId = playerDoc.id;
+                            pitchData.firstName = player.firstName;
+                            pitchData.lastName = player.lastName;
+                            pitchData.number = player.number;
+                            filteredPitches.push(pitchData);
+                        }
                     });
-                    displayResults(allPitchesData); // Call displayResults after fetching all data
+
+                    return filteredPitches;
                 });
+
+            promises.push(promise);
+        });
+
+        Promise.all(promises).then((allFilteredPitchesArrays) => {
+            const allPitchesData = allFilteredPitchesArrays.flat();
+            displayResults(allPitchesData);
+        }).catch((error) => {
+            console.error("Error getting documents: ", error);
         });
     });
 }
 
-function displayResults(pitchesData) {
+function displayResults(filteredPitches) {
     let playerStats = {};
-    pitchesData.forEach(pitch => {
+    filteredPitches.forEach(pitch => {
         if (!playerStats[pitch.playerId]) {
             playerStats[pitch.playerId] = {
                 hit: 0,
@@ -55,8 +72,6 @@ function displayResults(pitchesData) {
             player.missTypes[missType] = (player.missTypes[missType] || 0) + 1;
         }
     });
-
-
 
 
     let resultsTable = '';
