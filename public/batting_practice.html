@@ -3,57 +3,29 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Batting Practice App</title>
-		<!-- Bootstrap CSS -->
+		<title>Batting Practice</title>
+		<!-- Bootstrap 4 CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 		<!-- Native CSS -->
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
 		<div class="container mt-4">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="#">Batting Practice</a>
-				<button class="navbar-toggler m-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="add_update_player.html">Add/Update Player</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="batting_practice.html">Batting Practice</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="hitting_results.html">Hitting Results</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="fielding_practice.html">Fielding Practice</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="fielding_results.html">Fielding Results</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="bullpen.html">Bullpen Tracking</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="bullpen_results.html">Bullpen Results</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
+			<div id="nav-container"></div>
 			<div id="battersList"></div>
 		</div>
 
-		<!-- Firebase App is always required and must be first -->
+		<!-- Firebase SDK -->
 		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 		<script src="firebase-init.js"></script>
 
-		<!-- Bootstrap -->
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+		<!-- jQuery, Popper.js, Bootstrap 4 JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="nav.js"></script>
 
-		<!-- custom script -->
 		<script src="batting_practice.js"></script>
 	</body>
 </html>

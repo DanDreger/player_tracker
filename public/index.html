@@ -4,47 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Add/Update Player</title>
+		<title>Team Tracker</title>
 
-		<!-- Bootstrap CSS -->
+		<!-- Bootstrap 4 CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-
 		<!-- Native CSS -->
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
 		<div class="container-fluid">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="#">Add/Edit Players</a>
-				<button class="navbar-toggler m-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="add_update_player.html">Add/Update Player</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="batting_practice.html">Batting Practice</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="hitting_results.html">Hitting Results</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="fielding_practice.html">Fielding Practice</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="fielding_results.html">Fielding Results</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="bullpen.html">Bullpen Tracking</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="bullpen_results.html">Bullpen Results</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
+			<div id="nav-container"></div>
+
 			<!-- Below your 'Add Player' button -->
 			<div id="playersList"></div>
 
@@ -89,7 +59,6 @@
 										<option>23</option>
 										<option>24</option>
 										<option>25</option>
-										<!-- Add more options as needed -->
 									</select>
 								</div>
 								<div class="form-group">
@@ -104,43 +73,43 @@
 									<label>Player Positions</label>
 									<div class="form-check">
 										<input class="form-check-input position-checkbox" type="checkbox" value="Pitcher" id="position1" />
-										<label class="form-check-label" for="position1"> Position 1 </label>
+										<label class="form-check-label" for="position1">Pitcher (P)</label>
 									</div>
 									<div class="form-check">
 										<input class="form-check-input position-checkbox" type="checkbox" value="Catcher" id="position2" />
-										<label class="form-check-label" for="position2"> Position 2 </label>
+										<label class="form-check-label" for="position2">Catcher (C)</label>
 									</div>
 									<div class="form-check">
 										<input class="form-check-input position-checkbox" type="checkbox" value="First Base" id="position3" />
-										<label class="form-check-label" for="position2"> Position 3 </label>
+										<label class="form-check-label" for="position3">First Base (1B)</label>
 									</div>
 									<div class="form-check">
 										<input class="form-check-input position-checkbox" type="checkbox" value="Second Base" id="position4" />
-										<label class="form-check-label" for="position2"> Position 4 </label>
+										<label class="form-check-label" for="position4">Second Base (2B)</label>
 									</div>
 									<div class="form-check">
 										<input class="form-check-input position-checkbox" type="checkbox" value="Third Base" id="position5" />
-										<label class="form-check-label" for="position2"> Position 5 </label>
+										<label class="form-check-label" for="position5">Third Base (3B)</label>
 									</div>
 									<div class="form-check">
 										<input class="form-check-input position-checkbox" type="checkbox" value="Short Stop" id="position6" />
-										<label class="form-check-label" for="position2"> Position 6 </label>
+										<label class="form-check-label" for="position6">Shortstop (SS)</label>
 									</div>
 									<div class="form-check">
 										<input class="form-check-input position-checkbox" type="checkbox" value="Left Field" id="position7" />
-										<label class="form-check-label" for="position2"> Position 7 </label>
+										<label class="form-check-label" for="position7">Left Field (LF)</label>
 									</div>
 									<div class="form-check">
 										<input class="form-check-input position-checkbox" type="checkbox" value="Center Field" id="position8" />
-										<label class="form-check-label" for="position2"> Position 8 </label>
+										<label class="form-check-label" for="position8">Center Field (CF)</label>
 									</div>
 									<div class="form-check">
 										<input class="form-check-input position-checkbox" type="checkbox" value="Right Field" id="position9" />
-										<label class="form-check-label" for="position2"> Position 9 </label>
+										<label class="form-check-label" for="position9">Right Field (RF)</label>
 									</div>
 									<div class="form-check">
 										<input class="form-check-input position-checkbox" type="checkbox" value="Designated Hitter" id="positionDH" />
-										<label class="form-check-label" for="position2"> Position DH </label>
+										<label class="form-check-label" for="positionDH">Designated Hitter (DH)</label>
 									</div>
 								</div>
 								<div class="modal-footer">
@@ -163,8 +132,12 @@
 		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 		<script src="firebase-init.js"></script>
 
+		<!-- jQuery, Popper.js, Bootstrap 4 JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="nav.js"></script>
+
 		<script src="app.js"></script>
-		<!-- Bootstrap -->
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
